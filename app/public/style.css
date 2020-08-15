@@ -1,0 +1,41 @@
+body{
+    background-color: powderblue;
+    font-size: 20px;
+     margin: 25px;
+     border: 100% ;
+     border-color:  #2699d3;
+    border-style: groove;
+    border-width: 10px;
+    padding: 80px;
+}
+
+hr{
+    height: 1.2px;
+    background-color: #2699d3;
+    border: none;
+    
+}
+
+ul{ border: 30px 10px;
+    border-color: #2699d3;
+    border-style: inset;
+    border-width: 5px;
+    padding: 40px;
+    width: 35%;
+    
+   
+}
+
+h1,h2,h3{
+    color: blue;
+    
+}
+  
+q{
+    font-variant: small-caps;
+    font-size: 25px;
+    color: blue;
+    text-shadow: 2px 2px #66ccff;
+    
+
+}
