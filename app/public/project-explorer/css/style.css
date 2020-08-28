@@ -1,0 +1,492 @@
+body{
+	margin:5px 50px;
+	background-color: #d8f0f3;
+}
+
+
+ul{
+	list-style: none;
+}
+
+hr{
+	border-color: #3cb3c3;
+	}
+							/* Style bottom bar */
+.bottombar{
+			background-color: powderblue;
+			padding: 10px;
+			text-align: right;
+			margin-top: 200px;
+			margin-bottom: 100px;
+			width: 100%;
+			color:  #64c2ce;
+}
+
+							/* Style buttons */
+button {
+ font-family: "proxima nova";
+	font-weight: 100px;
+	font-size: 12px;
+	color: #3cb3c3;
+	border: solid 2px #3cb3c3;
+	border-radius: 30px;
+	padding: 5px 8px;
+	transition-duration: 500ms;
+}
+
+button:hover {
+ background-color:#3cb3c3;
+	color: white;
+}
+							/* Style select boxes */
+select {
+   border-color: #0099cc;
+    border-radius: 4px;
+    background-color: #d8f0f3;
+}
+
+select:hover{
+	background-color:#3cb3c3;
+	color: white;
+}
+
+
+							/* styling the general navbar */
+.navlinks {
+	width: 100%;
+	border-radius: 0;
+	margin:0px;
+	padding: 5px;
+	background-color: #64c2ce;
+	font-family:  "proxima nova";
+	font-weight: 500px;
+	color:  #3385ff;
+}
+
+.navlinks button{
+		border: 2px solid powderblue;
+		border-radius: 30px;
+		outline: none;
+	}
+	
+.navlinks a{
+	font-size: 20px;
+	border-radius: 30px;
+	padding: 5px 8px;
+	color:  #3385ff;
+	
+}
+	
+.navlinks a:hover{
+	transition-duration: 500ms;
+	background-color:#1a8cff;
+	border: 1px  #3cb3c3;
+	color: white;
+}
+
+							/*Styling the general searchbar */
+.navlinks input{
+	color: blue;
+	border: 2px solid powderblue;
+	padding: 0 3px;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 40px;
+	outline: none;
+}
+			
+						/* float links to the right */
+.register{
+	float: right;
+	
+}
+
+.center{
+	text-align: center;
+	
+}
+
+h4{
+	color: #0073e6;
+}
+
+a{
+	text-decoration: none;
+}
+					/* Styling the introduction box on index.html */
+.intro{
+display: flex;
+border-style:hidden;
+margin: 10px 250px 0px 250px;
+margin-bottom: 0;
+width: 800px
+}
+
+.intro-item{
+
+padding: 30px;
+background-color: powderblue;
+border-radius: 15px 50px 30px 5px;
+border: 2px inset  #2699d3; 
+
+}
+						/* Styling the login button on login.html */
+.login{
+	font-family: "proxima nova";
+	font-weight: 100px;
+	font-size: 12px;
+	color: #3cb3c3;
+	border: solid 2px #3cb3c3;
+	border-radius: 30px;
+	padding: 5px 8px;
+	transition-duration: 500ms;
+}
+.login:hover{
+	background-color:#3cb3c3;
+	color: white;
+}
+						/* Styling the getstarted button on login.html */
+.getstarted{
+	font-family: "proxima nova";
+	font-weight: 100px;
+	font-size: 12px;
+	color: #3385ff;
+	border: solid 2px #3385ff;
+	border-radius: 30px;
+	padding: 5px 8px;
+	transition-duration: 500ms;
+}	
+
+.getstarted:hover{
+	background-color: #3385ff;
+	color: white;
+}
+							/* Styling the project list boxes on login.html*/
+.projectlist{
+	border-style: hidden;
+	display: flex;
+	 flex-flow: row wrap;
+	width: 800px;
+	margin: 0px 250px;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	
+}
+
+.list{
+	margin-bottom: 10px;
+	border: 2px inset  #2699d3;
+	background-color:   powderblue;
+	border-radius: 15px 50px;
+	width: 250px;
+	
+}
+
+							/* login.html */
+
+.login-input{
+display: flex;
+border-style:hidden;
+margin: 100px 250px 0px 400px;
+margin-bottom: 0;
+width: 400px;
+}
+/* styling the login form */
+.details{
+padding: 30px;
+background-color: powderblue;
+border-radius: 15px 50px 30px 5px;
+border: 2px inset  #2699d3;
+}
+
+.details input{
+	color: blue;
+	border: 2px solid #64c2ce;
+	padding: 0 3px;
+	height: 30px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+}
+
+                                    /* register.html */
+
+.reg{
+display: flex;
+border-style:hidden;
+margin: 50px 250px 10px 250px;
+margin-bottom: 0;
+width: 800px;
+height: 350px;
+}
+/* Styling the signupform on register.html */
+.reg-item{
+padding: 10px;
+background-color: powderblue;
+border-radius: 15px 50px 30px 5px;
+border: 2px inset  #2699d3;
+
+}
+
+.reg-item  input{
+	
+	color: blue;
+	border: 2px solid #64c2ce;
+	padding: 0 3px;
+	height: 30px;
+	width: 300px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+	
+}
+
+.reg-item input:hover{
+	background-color:#3cb3c3;
+	color: white;
+}
+							/* createproject.html */
+.form-items input{
+	color: blue;
+	border: 2px solid powderblue;
+	padding: 0 3px;
+	padding-left: 4px;
+	width: 500px;
+	height: 30px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+}
+/* Styling the createproject form */
+.form{
+display: flex;
+border-style:hidden;
+margin: 50px 250px 0px 350px;
+margin-bottom: 0;
+width: 300px
+}
+
+.form-items{
+	padding: 5px;
+background-color: powderblue;
+border-radius: 15px 50px 30px 5px;
+border: 2px inset  #2699d3;
+}
+
+textarea{
+	border: 2px solid powderblue;
+	border-radius: 40px;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+										/* search.html */
+.searchnav{
+	display: flex;
+	background-color: powderblue;
+	padding: 10px;
+	margin: 3opx 15px 0px 30px;
+	margin-left: 50px;
+	margin-right: 50px;	
+	margin-bottom: 50px;	
+	justify-content: flex-start; 
+	
+}
+.searchnav label{
+	background-color:  #8bd1da;
+	border-color: #0099cc;
+    padding: 8px 2px;
+	margin-left: 15px;
+}
+
+.searchnav button{
+	margin-left: 30px;
+}
+
+.searchnav input{
+	font-size: 15px;
+	width: 600px;
+	height: 30px;
+	border-radius: 10px;
+	border-color:  #2699d3;
+	outline: none;
+}
+/*styling search result list */
+.searchresult{
+	
+	border-style: hidden;
+	display: flex;
+	flex-flow: row wrap;
+	width: 1200px;
+	margin: 0px 50px;
+	flex-direction: row-reverse;
+	justify-content: space-around; 
+	
+}
+
+.searchlist{
+	margin-bottom: 30px;
+	border: 2px inset  #2699d3;
+	background-color: powderblue;
+	border-radius: 15px 50px;
+	width: 250px;
+	height: 200px;
+	padding: 5px;
+	font-size: 15px;
+	text-align: justify;
+	
+}
+
+										/* profile.html*/ 
+.profilebar{
+	display: flex;
+	background-color: powderblue;
+	padding: 10px;
+	margin: 3opx 15px 0px 30px;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/* style the update profile form on profile.html */
+.profile{
+	display: flex;
+	border-style:hidden;
+	margin: 30px 250px 10px 350px;
+	margin-bottom: 0;
+	width: 680px;
+	height: 250px;
+	align-items: stretch;
+
+}
+
+.updateprofile{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 2px;
+	padding-left: 30px;
+	background-color: powderblue;
+	border-radius: 15px 50px 30px 5px;
+	border: 2px inset  #2699d3;
+	flex:1;
+}
+
+.updateprofile select{
+	width: 200px;
+}
+
+.updateprofile input{
+	
+	border: 2px solid #64c2ce;
+	padding: 0 3px;
+	height: 30px;
+	width: 250px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+	
+}
+
+
+/* Style the password form - display items horizontally */
+.profilepsw {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.profilepsw label {
+  margin: 5px 0px 15px 15px;
+  
+}
+
+/* Style the password input fields */
+.profilepsw input {
+	border: 2px solid #64c2ce;
+	padding: 0 3px;
+	height: 30px;
+	width: 150px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+}
+
+
+
+
+										/* Editproject.html*/
+/* style the edit and view project pages */
+.editprojectpg, .viewprojectpg{
+	display: flex;
+
+}
+/* style the edit project form */
+.editproject{
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+.editproject input{
+	
+	border: 2px solid #64c2ce;
+	padding: 10px 10px;
+	height: 30px;
+	width: 500px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+	
+}
+
+.editproject textarea{
+	border: 2px solid #64c2ce;
+	padding: 10px 10px;
+	height: 100px;
+	width: 500px;
+	font-size: 12px;
+	border-radius: 40px;
+	outline: none;
+}
+
+/* style the manage profile section */
+.manageprofile{
+	margin-left: 40px;
+	width: 580px;
+}
+
+									/* Viewproject.html */
+/* style the project abstract section */
+.projectabst{
+font-size: 18px;
+width: 550px;
+margin-left: 50px;
+
+
+}	
+/* style the project details section */
+.projectdetail{
+	width: 570px;
+	margin-left: 50px;
+	font-size: 18px;
+	
+}
+/* style the project authors section */
+.projectauthor{
+	display: flex;
+	width: 450px;
+	padding: 1px;
+	border: 1px solid blue;
+	background-color:#64c2ce;
+	font-size: 18px;
+	align-items: column;
+}
+
+/* style the project files selection section */
+.files{ 
+	width: 450px;
+	background-color: #64c2ce;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid blue;
+}
