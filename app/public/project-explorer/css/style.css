@@ -131,7 +131,7 @@ border-radius: 15px 50px 30px 5px;
 border: 2px inset  #2699d3; 
 
 }
-						/* Styling the login button on login.html */
+						/* Styling the login button on index.html */
 .login{
 	font-family: "proxima nova";
 	font-weight: 100px;
@@ -146,7 +146,7 @@ border: 2px inset  #2699d3;
 	background-color:#3cb3c3;
 	color: white;
 }
-						/* Styling the getstarted button on login.html */
+						/* Styling the getstarted button on index.html */
 .getstarted{
 	font-family: "proxima nova";
 	font-weight: 100px;
@@ -162,7 +162,7 @@ border: 2px inset  #2699d3;
 	background-color: #3385ff;
 	color: white;
 }
-							/* Styling the project list boxes on login.html*/
+							/* Styling the project list boxes on index.html*/
 .projectlist{
 	border-style: hidden;
 	display: flex;
