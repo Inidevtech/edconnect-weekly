@@ -1,9 +1,3 @@
-.my-jumbo{
-    background-color:rgba(231, 231, 231, 0.836);
-    margin:15px 50px;
-    margin-top: 100px;
-}
-
 body{
 	
 	background-color: #f3f3f3;
@@ -12,10 +6,19 @@ body{
 footer{
     text-align: right;
 }
+
 .my-nav{
-    background-color:#4093ff;
-   
+    background-color:#4093ff; 
 }
+
+/*index page */
+.my-jumbo{
+    background-color:rgba(231, 231, 231, 0.836);
+    margin:15px 50px;
+    margin-top: 100px;
+}
+
+/*login page */
 .my-form{
     width: 100%;
     max-width: 500px;
@@ -24,6 +27,8 @@ footer{
     margin-right:auto;
     margin-top: 50px;
 }
+
+/*Sign up Page*/
 .signUp{
     
    max-width: 50;
@@ -32,6 +37,7 @@ footer{
     padding: 10px;    
 }
 
+/*Profile page */
 .my-profile{
 	list-style-type: none;
 	background-color: rgba(231, 231, 231, 0.836);
