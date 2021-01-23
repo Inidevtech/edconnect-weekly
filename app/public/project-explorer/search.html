@@ -3,34 +3,84 @@
     <head>
         <meta charset="UTF-8">
         <title>Search</title>
-		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/new.css">
     </head>
         <body> 
 		
-            <nav class="navlinks">
+           
+		<nav class="navbar navbar-dark navbar-expand-md my-nav fixed-top ">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#responsiveNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-                <a href="index.html" target=_blank>Project Explorer</a>
+			<div class="collapse navbar-collapse" id="responsiveNav">
+				<a class="navbar-brand" href="#">Project Explorer</a>
+				<!--<a href="index.html" target=_blank>Project Explorer</a> -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="search.html" class="nav-link">Projects</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="createProject.html" class="nav-link">Submit</a>
+					</li>
+
+					<li class="nav-item ml-auto">
+						<a href="login.html" class="nav-link">Login</a>
+					</li>
+					<li class="nav-item">
+						<a href="register.html" class="nav-link">Sign Up</a>
+					</li>
+
+				</ul>
+			</div>
                 
-                <a href="search.html" target=_blank>Projects</a>
-                <a href="login.html" target=_blank class="register">Login</a>
-                <a href="register.html" target=_blank class="register">Sign Up</a>
-                <a href="createProject.html" target=_blank>Submit</a>
-                <input id="search_term" type="text" placeholder="Search Projects" value="Search Projects">
-                <button type="search" placeholder="Search">Search</button> 
-            </nav>	
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2"  type="text" placeholder="Search Projects" name="search" >
+                <button class="btn  btn-light my-2 my-sm-0" type="submit" placeholder="Search">Search</button>
+
+               
+                </form> 
+            </nav>
+            
+            <!--Body-->
+            <div class="container">
+                <h2 class="galleryHeading">Project Gallery</h2>
+                <div class="row searchProject">
+                    
+                    <div class=col>
+                        <form class="form-inline" method="POST" action="" enctype="text/plain">
+
+                            <div class="form-group">
+
+                                <input class="form-control form-control-lg" name="searchTerm" size="45" type="text"
+                                    placeholder="Search Project name, authors, abstract, tags">&nbsp;&nbsp;&nbsp;
         
-				<h2>Project Gallery</h2>
-				<div class="searchnav">
-				 <input type="text" placeholder="Search project names, authors, abstract, tags" name="search">
-				<label> Search by </label>
-                    <select name="searchid" placeholder="Name">
-                        <option value="name">Name</option>
-                        <option value="tag">Tag</option>
-                        <option value="author">Author</option>
-                        <option value="abstract">Abstract</option>
-                      </select>
-					    <button type="submit">Submit</button>
-				</div>
+                            </div>
+        
+                            <div class="form-group">
+
+                                <button class="btn btn-lg" style="background-color: #a9a9a957" role="button">Search
+                                    by</button>
+        
+                                <select class="form-control form-control-lg" name="searchBy">
+                                    <option value="name">Name</option>
+                                    <option value="tag">Tag</option>
+                                    <option value="author">Author</option>
+                                    <option value="abstract">Abstract</option>
+                                </select>
+        
+                            </div>
+              
+                            <div class="form-group">
+
+                                &nbsp;&nbsp;<button class="btn btn-primary btn-lg" type="submit">Submit</button>
+        
+                            </div>
+                    </form>
+            </div>    
+         </div>
                     <!-- <h3>Search Project By</h3>
                     
                     
@@ -56,68 +106,94 @@
                     
                        </form>
 					   -->
-
-                       <h3>All Projects (4 results)</h3>
+            <div class="container">
+                       <p class="galleryHeading2">All Projects <small class="text-muted">(4 results)</small></p>
 					   
 					    
 		  
-		  <div class="searchresult">
+                       <div class="row" style="margin: 10px">
+                        
+                        <div class="col-md-3 order-4">
+                            
+                            <div class="card" style="padding: 20px">
+                                
+                                <div class="card-block">
+                                   
+                                    <h6 class="card-title">Project 1</h6>
+                                    <small class="text-muted">James Li, Ade Brian</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repudiandae obcaecati
+                                        tempora quasi ex incidunt sunt dignissimos minus.<br>
+           
+                                       <a href="#">#javascript</a>,<a href="#">#css</a></span></p>
+           
+                               </div>
+           
+                           </div>
+
+                        </div>
+
+                           <div class="col-md-3 order-3">
+                            
+                            <div class="card" style="padding: 20px">
+                                
+                                <div class="card-block">
+                                   
+                                    <h6 class="card-title">Project 2</h6>
+                                    <small class="text-muted">James Li, Ade Brian</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repudiandae obcaecati
+                                        tempora quasi ex incidunt sunt dignissimos minus.<br>
+           
+                                       <a href="#">#javascript</a>,<a href="#">#css</a></span></p>
+           
+                               </div>
+           
+                           </div>
+
+                           </div>
+
+                           <div class="col-md-3 order-2">
+                            
+                            <div class="card" style="padding: 20px">
+                                
+                                <div class="card-block">
+                                   
+                                    <h6 class="card-title">Project 3</h6>
+                                    <small class="text-muted">James Li, Ade Brian</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repudiandae obcaecati
+                                        tempora quasi ex incidunt sunt dignissimos minus.<br>
+           
+                                       <a href="#">#javascript</a>,<a href="#">#css</a></span></p>
+           
+                               </div>
+           
+                           </div>
+
+                        </div>
+
+                        <div class="col-md-3 order-1">
+                            
+                            <div class="card" style="padding: 20px">
+                                
+                                <div class="card-block">
+                                   
+                                    <h6 class="card-title">Project 1</h6>
+                                    <small class="text-muted">James Li, Ade Brian</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repudiandae obcaecati
+                                        tempora quasi ex incidunt sunt dignissimos minus.<br>
+           
+                                       <a href="#">#javascript</a>,<a href="#">#css</a></span></p>
+           
+                               </div>
+           
+                           </div>
+
+                        </div>
+
 		  
-		  <div class="searchlist">
-		  <h4> 	Project 1</h4>
-                
-				Here is the first paragraph, containing text that
- really doesn't have any use    or meaning; it just prattles on and on,  
- with no end whatsoever, no point to    make, really no purpose for existence
- at all.<br>  
-  <a href="#"> #yaml</a>,<a href="#"> #ejs</a>
-					</div>
-					
-					
-				<div class="searchlist">
-                    
-                    <ul>
-					<h4>Project 2</h4>
-                         <li>Name: Project 2</li>
-                            <li>Description: blah blah blah</li>
-                            <li>Program: Computer Science</li>
-                            <li>Authors: Ade Ade, Brian James</li>
-                            <li>Tags:<a href="#"> #yaml</a>,<a href="#"> #ejs</a></li>
 						
-                    </ul>
-					</div>
-					
-					<div class="searchlist">
-                   
-                    <ul>
-						 <h4>Project 3</h4>
-                         <li>Name: Project 3</li>
-                            <li>Description: blah blah blah</li>
-                            <li>Program: Computer Science</li>
-                            <li>Authors: Ade Ade, Brian James</li>
-                            <li>Tags:<a href="#"> #yaml</a>,<a href="#"> #ejs</a></li>
-						
-                    </ul>
-					</div>
-					
-					
-					<div class="searchlist">
-                        <ul>
-						 <h4>Project 4</h4>
-                            <li>Name: Project 4</li>
-                            <li>Description: blah blah blah</li>
-                            <li>Program: Computer Science</li>
-                            <li>Authors: Ade Ade, Brian James</li>
-                            <li>Tags:<a href="#"> #yaml</a>,<a href="#"> #ejs</a></li>
-                        </ul>
-						</div>
-						
-						
-						
-						
-						
-						
-						</div>
-						<div class="bottombar"> Project Explorer 2020. <b>Edconnect</b></div>
+				</div>
+						<hr>
+                        <footer class="container"> Project Explorer 2020. <b>Edconnect</b></footer>
+    
         </body>
         </html>

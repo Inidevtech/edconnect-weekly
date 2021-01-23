@@ -3,66 +3,170 @@
     <head>
         <meta charset="UTF-8">
         <title>Edit Project</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/new.css">
     </head>
         <body> 
-            <nav class="navlinks">
+           
+		<nav class="navbar navbar-dark navbar-expand-md my-nav fixed-top ">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#responsiveNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-                <a href="index.html" target=_blank>Project Explorer</a>
+			<div class="collapse navbar-collapse" id="responsiveNav">
+				<a class="navbar-brand" href="#">Project Explorer</a>
+				<!--<a href="index.html" target=_blank>Project Explorer</a> -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="search.html" class="nav-link">Projects</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="createProject.html" class="nav-link">Submit</a>
+					</li>
+
+					<li class="nav-item ml-auto">
+						<a href="login.html" class="nav-link">Login</a>
+					</li>
+					<li class="nav-item">
+						<a href="register.html" class="nav-link">Sign Up</a>
+					</li>
+
+				</ul>
+			</div>
                 
-                <a href="search.html" target=_blank>Projects</a>
-                <a href="login.html" target=_blank class="register">Login</a>
-                <a href="register.html" target=_blank class="register">Sign Up</a>
-                <a href="createProject.html" target=_blank>Submit</a>
-                <input id="search_term" type="text" placeholder="Search Projects" value="Search Projects">
-                <button type="search" placeholder="Search">Search</button> 
-            </nav>	
-        
-                <h3>Project 4</h3>
-                <ul class="profilebar">
-                    <li>Created By<br> Ade Ade</li>
-                    <li>Date Created<br> 03/03/2020</li>
-                    <li>Last Updated<br> 04/04/2020</li>
-					<button type="submit">View Project</button>	
-                </ul> 
-			<div class="editprojectpg">
-			<div class="editproject">
-                <h3>Edit Project</h3>
-				<hr>
-                Project Name: <br>
-                <input type="text" name="projname" placeholder="Project 4">
-                <br>
-                <br>
-                Project Abstract: <br>
-                <textarea name="paragraph_text" name="projabst" placeholder="Enter your Project Abstract Here" cols="25" rows="2"></textarea>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2"  type="text" placeholder="Search Projects" name="search" >
+                <button class="btn  btn-light my-2 my-sm-0" type="submit" placeholder="Search">Search</button>
+
                 
-               <br>
-               <br>
-               
-                 Authors: <br>
-                <input type="text" name="authors">
-                <br>
-                <br>
-                Tag(s): <br>
-                <input type="text" name="tags">
-               <br>
-               <br>
-			   <button type="submit">Save</button>
-</div>			   
-			  <div class="manageprofile">
-			    <h3>Manage Files</h3>
-				<hr>
-               <br>
-            <input type="file"  id="myFile" name="filename">
-               <br>
-               <br>
-                <h3>Project Files</h3>
-				<div class="files">No files uploaded yet </div>
+                </form> 
+            </nav>
+            
+            <!--Body-->
+
+            <div class="container">
+
+                <h2 style="margin-top: 80px">Project 4</h2>
+            
+                    <div class="row  align-items-center"  style="background-color:rgba(231, 231, 231, 0.836) margin: 0px auto 20px 20px; padding: 5px 0px 5px 10px">
+                      
+
+                            <div class="col-md-10">
+    
+                                <div class="row">
                     
-                      <form>
+                                    <div class="col-md-4">
+                                        Created by<br>
+                                        Inioluwa
+                                    </div>
+                    
+                    
+                    
+                                    <div class="col-md-4">
+                                        Date Created<br>
+                                        03/03/2020
+                                    </div>
+                        
+                                    <div class="col-md-4">
+                                        Last Updated<br>
+                                        04/04/2020
+                                    </div>
+                
+                                </div>
+                            
+                            </div>
+
+                            <div class="col-md-2">
+                                <a class="btn btn-primary" href="viewProject.html">View Project</a>
+                            </div>
+                    
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="container">
+    
+                        <form method="POST" action="" enctype="text/plain">
+                    
+                            <div class="row" style="margin: 0px -16px 0px 3px">
+                    
+                                <div class="col-md-6">
+                    
+                                    <h3>Edit Project</h3>
+                    
+                                    <hr>    
+
+
+                                    <fieldset class="form-group">
+    
+                                        <label>Project Name</label>
+                    
+                                        <input class="form-control" type="text" name="name" size="74" maxlength="50" value="Technology">
+                    
+                                    </fieldset>
+                    
+                                    <fieldset class="form-group">
+                    
+                                        <label>Project Abstract</label>
+                    
+                                        <textarea class="form-control" name="abstract" size="20" maxlength="150" rows="10" cols="56"
+                                            placeholder="Maximum of 150 characters">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit. Veritatis, dolorum nisi! Tempora nemo quibusdam soluta mollitia accusantium. Exercitationem, saepe. Placeat hic iusto perspiciatis asperiores fugiat?</textarea>
+                    
+                                    </fieldset>
+                        
+                                    <fieldset class="form-group">
+                    
+                                        <label>Author(s)</label>
+                    
+                                        <input class="form-control" type="text" name="authors" size="74" maxlength="50"
+                                            value="Ade James, Brian Olaoluwa">
+                    
+                                    </fieldset>
+                    
+                                    <fieldset class="form-group">
+                    
+                                        <label>Tag(s)</label>
+                    
+                                        <input class="form-control" type="text" name="tags" size="74" maxlength="50" value="#yaml, #ejs">
+                    
+                                    </fieldset>
+                    
+                                    <button class="btn btn-primary" type="submit">Save</button>
+                    
+                                </div>
+
+
+
+                                <div class="col-md-6">
+    
+                                    <h3>Manage Project files</h3>
+                    
+                                    <hr>
+                    
+                                    <fieldset class="form-group">
+                    
+                                        <input class="form-control-file" type="file">
+                    
+                                    </fieldset>
+                    
+                                    <div class="card">
+                    
+                                        <div class="card-header">
+                    
+                                            <b>Project files</b>
+                    
+                                        </div>
+                    
+                                        <div class="card-block filecard" >
+                    
+                                            <p class="card-text">No file uploaded yet</p>
+                    
                       </form>
 					 </div>
 					  </div>
-					  </div>
-					  <div class="bottombar"> Project Explorer 2020. <b>Edconnect</b></div>
+                      </div>
+            </div>
+            <hr>
+            <footer class="container"> Project Explorer 2020. <b>Edconnect</b></footer>
         </body>

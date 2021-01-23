@@ -3,36 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <title>Login </title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/new.css">
     </head>
         <body> 
-            <nav class="navlinks">
+          
+		<nav class="navbar navbar-dark navbar-expand-md my-nav fixed-top ">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#responsiveNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-                <a href="index.html" target=_blank>Project Explorer</a>
+			<div class="collapse navbar-collapse" id="responsiveNav">
+				<a class="navbar-brand" href="#">Project Explorer</a>
+				<!--<a href="index.html" target=_blank>Project Explorer</a> -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="search.html" class="nav-link">Projects</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="createProject.html" class="nav-link">Submit</a>
+					</li>
+
+					<li class="nav-item ml-auto">
+						<a href="login.html" class="nav-link">Login</a>
+					</li>
+					<li class="nav-item">
+						<a href="register.html" class="nav-link">Sign Up</a>
+					</li>
+
+				</ul>
+			</div>
+               
                 
-                <a href="search.html" target=_blank>Projects</a>
-                <a href="login.html" target=_blank class="register">Login</a>
-                <a href="register.html" target=_blank class="register">Sign Up</a>
-                <a href="createProject.html" target=_blank>Submit</a>
-                <input id="search_term" type="text" placeholder="Search Projects" value="Search Projects">
-                <button type="search" placeholder="Search">Search</button> 
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2"  type="text" placeholder="Search Projects" name="search" >
+                <button class="btn  btn-light my-2 my-sm-0" type="submit" placeholder="Search">Search</button>
+                </form> 
             </nav>	
-        
                     
-					<div class="login-input">
-					<div class="details">
-					<h2>Login</h2>
-                        Email Adress:<br> <input type="text" size="50">
+					<div class="form-group my-form">
+					
+                    <h2>Login</h2>
+                    <label for="EmailAddress">Email Adress</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="Enter Email">
                         <br>
                         <br>
-                        Password:<br> <input type="password" size="50">
+                        <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
                         <br>
                         <br>
-                        <input type="submit" class="login">
+                        <input type="submit" class="btn btn-primary">
 					</div>
 					</div>
 
-					<div class="bottombar"> Project Explorer 2020. <b>Edconnect</b></div>
+					<hr>
+					<footer class="container"> Project Explorer 2020. <b>Edconnect</b></footer>
 
                         </body>
                         </html>
